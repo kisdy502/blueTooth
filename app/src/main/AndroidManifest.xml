@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.kisdy.sdt13411.k3app">
+
+    <uses-permission android:name="android.permission.READ_CONTACTS"/>
+    <uses-permission android:name="android.permission.WRITE_CONTACTS"/>
+    <uses-permission android:name="android.permission.READ_SMS"/>
+    <uses-permission android:name="android.permission.SEND_SMS"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".SmsRecordActivity"></activity>
+        <activity
+            android:name=".ChooseFestivalActivity"
+            android:windowSoftInputMode="adjustResize"></activity>
+        <activity
+            android:name=".SendMsgActivity"
+            android:windowSoftInputMode="adjustPan|stateHidden"></activity>
+
+
+        <activity android:name=".DefaultActivity"></activity>
+
+        <provider
+            android:name="com.kisdy.sdt13411.contentprovider.SmsContentProvider"
+            android:authorities="com.kisdy.sdt13411.contentprovider.SmsContentProvider"
+            android:readPermission="com.kisdy.sdt13411.read"
+            android:writePermission="com.kisdy.sdt13411.write" >
+        </provider>
+    </application>
+
+</manifest>

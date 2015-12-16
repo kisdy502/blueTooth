@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/K3APP.iml" filepath="$PROJECT_DIR$/K3APP.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/blue_booth/blue_booth.iml" filepath="$PROJECT_DIR$/blue_booth/blue_booth.iml" />
+      <module fileurl="file://$PROJECT_DIR$/poterview/poterview.iml" filepath="$PROJECT_DIR$/poterview/poterview.iml" />
+    </modules>
+  </component>
+</project>

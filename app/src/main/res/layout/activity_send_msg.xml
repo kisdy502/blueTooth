@@ -1,0 +1,78 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.kisdy.bee.SendMsgActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/id_edtContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left|top"
+            android:background="@drawable/sms_item"
+            android:maxHeight="200dp"
+            android:textColor="@color/gray"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/id_btnAdd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:text="添加联系人" />
+
+        <com.kisdy.sdt13411.view.FlowLayout
+            android:id="@+id/id_flowLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </com.kisdy.sdt13411.view.FlowLayout>
+
+
+    </LinearLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/id_fabSendMsg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center"
+        android:layout_marginBottom="@dimen/fab_margin_bottom"
+        android:src="@drawable/icon_send"
+        app:backgroundTint="@color/main_color"
+        app:borderWidth="0dp">
+    </android.support.design.widget.FloatingActionButton>
+
+    <FrameLayout
+        android:visibility="visible"
+        android:id="@+id/id_loading_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:clickable="true">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+
+            <ProgressBar
+                android:id="@+id/id_progessbar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:indeterminate="false" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="正在发送..." />
+        </LinearLayout>
+    </FrameLayout>
+</FrameLayout>

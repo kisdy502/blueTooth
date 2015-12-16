@@ -1,0 +1,48 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/id_tvSms"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/sms_item"
+        android:gravity="left|top"
+        android:maxHeight="200dp"
+        android:textColor="@color/gray"
+        android:text="我发给你的短信内容，你收到了吗？"
+        android:textSize="14sp" />
+
+
+    <com.kisdy.sdt13411.view.FlowLayout
+        android:id="@+id/id_fl_contacts"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </com.kisdy.sdt13411.view.FlowLayout>
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/id_tv_fes"
+            android:text="情人节"
+            android:layout_marginRight="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/tag_bg"/>
+
+        <TextView
+            android:id="@+id/id_tv_date"
+            android:text="2015-12-11 12:12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+</LinearLayout>
